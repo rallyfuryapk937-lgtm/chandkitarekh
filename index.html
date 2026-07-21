@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="robots" content="index, follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>चाँद की तारीख: इस्लामी कैलेंडर को समझने का सबसे आसान तरीका</title>
+    <style>
+        /* CSS Variables - Brand New Theme (Midnight Indigo & Royal Teal Accent) */
+        :root {
+            --bg-body: #f0f4f8;              /* Soft Cool Light Grey Background */
+            --header-bg: #0b1d3a;            /* Midnight Navy Blue */
+            --header-gradient: #112a52;      /* Lighter Midnight Shade */
+            --accent-teal: #008080;          /* Soft Royal Teal */
+            --accent-hover: #005a5a;
+            --accent-gold: #e5a93b;          /* Warm Amber Accent */
+            --text-dark: #1e293b;            /* Dark Slate Body Text */
+            --card-bg: #ffffff;              /* Crisp White Card Background */
+            --border-color: #cbd5e1;         /* Muted Border Grey */
+            --card-shadow: rgba(11, 29, 58, 0.08);
+        }
+
+        /* Reset & Base Styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+        }
+
+        /* Header Layout */
+        header {
+            background: linear-gradient(135deg, var(--header-bg) 0%, var(--header-gradient) 100%);
+            color: #ffffff;
+            padding: 50px 20px 40px;
+            text-align: center;
+            border-bottom: 4px solid var(--accent-gold);
+            box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-gold);
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        /* Card Section Styling */
+        .content-card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--card-shadow);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--accent-teal);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(11, 29, 58, 0.12);
+        }
+
+        /* Headings */
+        h2 {
+            color: var(--header-bg);
+            font-size: 1.55rem;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Anchor Styling - Exact Anchors Kept */
+        a.styled-link {
+            color: var(--accent-teal);
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: var(--accent-gold);
+            text-underline-offset: 4px;
+            padding: 1px 4px;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+
+        a.styled-link:hover {
+            background-color: var(--header-bg);
+            color: #ffffff;
+            text-decoration-color: var(--accent-gold);
+        }
+
+        /* Lists */
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 1.02rem;
+        }
+
+        li::marker {
+            color: var(--accent-teal);
+            font-weight: bold;
+        }
+
+        /* Responsive Tables */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 1rem;
+        }
+
+        th {
+            background-color: var(--header-bg);
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tr:hover {
+            background-color: #e6f2f2;
+        }
+
+        /* FAQ Styling */
+        .faq-item {
+            background-color: #f8fafc;
+            border-left: 4px solid var(--accent-teal);
+            padding: 16px 20px;
+            margin-bottom: 14px;
+            border-radius: 4px 8px 8px 4px;
+        }
+
+        .faq-item h3 {
+            color: var(--header-bg);
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
+            color: #334155;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--header-bg);
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 40px;
+            border-top: 3px solid var(--accent-gold);
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+            .content-card {
+                padding: 20px;
+            }
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>चाँद की तारीख: इस्लामी कैलेंडर को समझने का सबसे आसान तरीका</h1>
+        <p>हिजरी तिथि, चंद्रमा के चक्र और महत्वपूर्ण धार्मिक अवसरों का संपूर्ण मार्गदर्शन</p>
+    </header>
+
+    <div class="container">
+
+        <section class="content-card">
+            <h2>परिचय</h2>
+            <p>चाँद की तारीख इस्लामिक जीवन का एक महत्वपूर्ण हिस्सा है। दुनिया भर के मुसलमान अपने धार्मिक कार्यों, त्योहारों और विशेष दिनों की जानकारी के लिए हिजरी कैलेंडर का उपयोग करते हैं। यह कैलेंडर सूर्य पर नहीं बल्कि चंद्रमा की गति पर आधारित होता है। इसलिए इसकी तारीखें हर साल ग्रेगोरियन कैलेंडर की तुलना में लगभग 10 से 11 दिन पहले आ जाती हैं।</p>
+            <p>अगर आप रोज़ा, ईद, मुहर्रम, रबी-उल-अव्वल या अन्य इस्लामी महीनों की सही जानकारी चाहते हैं, तो <a href="https://chandkitarikh.com/" class="styled-link" target="_blank" rel="noopener">chand ki tarekh</a> जानना बहुत आवश्यक है।</p>
+        </section>
+
+        <section class="content-card">
+            <h2>चाँद की तारीख क्या होती है?</h2>
+            <p>चाँद की तारीख का अर्थ है हिजरी कैलेंडर की वर्तमान तिथि। यह तिथि चंद्रमा के दिखाई देने के आधार पर तय की जाती है। जैसे ही नए चाँद का दीदार होता है, नया इस्लामी महीना शुरू हो जाता है। यदि आप आज की तिथि की जांच करना चाहते हैं तो ऑनलाइन <a href="https://chandkitarikh.com/dwadashi-kab-hai/" class="styled-link" target="_blank" rel="noopener">chand ki tarekh</a> आसानी से देख सकते हैं।</p>
+            <p>इसी कारण कई बार अलग-अलग देशों या क्षेत्रों में एक ही दिन अलग हिजरी तारीख हो सकती है, क्योंकि चाँद का दिखाई देना स्थान के अनुसार बदल सकता है।</p>
+        </section>
+
+        <section class="content-card">
+            <h2>हिजरी कैलेंडर कैसे काम करता है?</h2>
+            <p>हिजरी कैलेंडर में कुल 12 महीने होते हैं। हर महीने में 29 या 30 दिन होते हैं। पूरा वर्ष लगभग 354 या 355 दिनों का होता है।</p>
+            
+            <h2>हिजरी महीनों के नाम</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>क्रम</th>
+                            <th>महीना</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>मुहर्रम</td></tr>
+                        <tr><td>2</td><td>सफर</td></tr>
+                        <tr><td>3</td><td>रबी-उल-अव्वल</td></tr>
+                        <tr><td>4</td><td>रबी-उल-आखिर</td></tr>
+                        <tr><td>5</td><td>जमादी-उल-अव्वल</td></tr>
+                        <tr><td>6</td><td>जमादी-उल-आखिर</td></tr>
+                        <tr><td>7</td><td>रजब</td></tr>
+                        <tr><td>8</td><td>शाबान</td></tr>
+                        <tr><td>9</td><td>रमजान</td></tr>
+                        <tr><td>10</td><td>शव्वाल</td></tr>
+                        <tr><td>11</td><td>ज़िलक़ादा</td></tr>
+                        <tr><td>12</td><td>ज़िलहिज्जा</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>चाँद की तारीख क्यों महत्वपूर्ण है?</h2>
+            <p>इस्लामी धर्म में कई धार्मिक कार्य हिजरी तारीखों के अनुसार किए जाते हैं। इनमें शामिल हैं:</p>
+            <ul>
+                <li>रमजान के रोज़ों की शुरुआत</li>
+                <li>ईद-उल-फितर</li>
+                <li>ईद-उल-अज़हा</li>
+                <li>हज का समय</li>
+                <li>आशूरा</li>
+                <li>शब-ए-बरात</li>
+                <li>शब-ए-मेराज</li>
+                <li>ईद मिलादुन्नबी</li>
+            </ul>
+            <p>यदि सही चाँद की तारीख पता न हो, तो इन अवसरों की सही जानकारी मिलना मुश्किल हो सकता है।</p>
+        </section>
+
+        <section class="content-card">
+            <h2>चाँद की तारीख कैसे तय की जाती है?</h2>
+            <p>नए महीने की शुरुआत तब मानी जाती है जब नए चाँद का दीदार हो जाता है। कई देशों में इसके लिए आधिकारिक चाँद देखने वाली समितियाँ बनाई गई हैं। ये समितियाँ विभिन्न स्थानों से प्राप्त रिपोर्टों की जांच करती हैं और फिर नए महीने की घोषणा करती हैं।</p>
+            <p>आजकल खगोलीय गणनाओं का भी उपयोग किया जाता है, लेकिन कई स्थानों पर प्रत्यक्ष चाँद देखने की परंपरा अब भी जारी है।</p>
+        </section>
+
+        <section class="content-card">
+            <h2>क्या हर देश में एक ही चाँद की तारीख होती है?</h2>
+            <p>नहीं। चाँद अलग-अलग समय पर दिखाई दे सकता है। इसलिए भारत, पाकिस्तान, बांग्लादेश, सऊदी अरब, यूएई और अन्य देशों में कभी-कभी हिजरी तारीख अलग हो सकती है।</p>
+            <p>यही कारण है कि रमजान या ईद की तारीखें भी कुछ देशों में अलग-अलग दिन मनाई जाती हैं।</p>
+        </section>
+
+        <section class="content-card">
+            <h2>चाँद की तारीख जानने के आधुनिक तरीके</h2>
+            <p>आज के समय में सही इस्लामी तारीख जानना पहले से कहीं आसान हो गया है। आप निम्न माध्यमों से जानकारी प्राप्त कर सकते हैं—</p>
+            <ul>
+                <li>इस्लामिक कैलेंडर वेबसाइट</li>
+                <li>मोबाइल ऐप</li>
+                <li>स्थानीय मस्जिद की घोषणा</li>
+                <li>चाँद देखने वाली समिति</li>
+                <li>धार्मिक संस्थाओं की आधिकारिक सूचना</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>इस्लामी कैलेंडर और अंग्रेज़ी कैलेंडर में अंतर</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>इस्लामी कैलेंडर</th>
+                            <th>ग्रेगोरियन कैलेंडर</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>चंद्रमा पर आधारित</td>
+                            <td>सूर्य पर आधारित</td>
+                        </tr>
+                        <tr>
+                            <td>लगभग 354 दिन</td>
+                            <td>365 दिन</td>
+                        </tr>
+                        <tr>
+                            <td>29 या 30 दिन का महीना</td>
+                            <td>28 से 31 दिन का महीना</td>
+                        </tr>
+                        <tr>
+                            <td>धार्मिक कार्यों के लिए उपयोग</td>
+                            <td>सामान्य जीवन और सरकारी कार्यों के लिए उपयोग</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>क्या केवल चाँद देखकर तारीख पता चल सकती है?</h2>
+            <p>सिर्फ चाँद देखने से हमेशा सही तारीख तय नहीं की जा सकती। मौसम, बादल और स्थान जैसी परिस्थितियाँ भी प्रभाव डालती हैं। इसलिए अधिकतर लोग आधिकारिक घोषणा या विश्वसनीय इस्लामी कैलेंडर का सहारा लेते हैं।</p>
+        </section>
+
+        <section class="content-card">
+            <h2>चाँद की तारीख जानने के लाभ</h2>
+            <ul>
+                <li>धार्मिक कार्य सही समय पर पूरे किए जा सकते हैं।</li>
+                <li>रमजान और ईद की तैयारी पहले से की जा सकती है।</li>
+                <li>इस्लामी महीनों की जानकारी बनी रहती है।</li>
+                <li>महत्वपूर्ण धार्मिक अवसर नहीं छूटते।</li>
+                <li>हिजरी कैलेंडर को समझना आसान हो जाता है।</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>अक्सर पूछे जाने वाले प्रश्न (FAQs)</h2>
+
+            <div class="faq-item">
+                <h3>1. चाँद की तारीख क्या होती है?</h3>
+                <p>यह हिजरी कैलेंडर की वर्तमान इस्लामी तिथि होती है, जो नए चाँद के दिखाई देने पर बदलती है।</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>2. हिजरी कैलेंडर में कितने महीने होते हैं?</h3>
+                <p>हिजरी कैलेंडर में कुल 12 महीने होते हैं।</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>3. क्या सभी देशों में एक ही इस्लामी तारीख होती है?</h3>
+                <p>नहीं। चाँद अलग-अलग स्थानों पर अलग समय पर दिखाई दे सकता है, इसलिए तारीख अलग हो सकती है।</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>4. चाँद की तारीख कैसे पता करें?</h3>
+                <p>आप आधिकारिक इस्लामिक कैलेंडर, विश्वसनीय वेबसाइट, मोबाइल ऐप या स्थानीय मस्जिद की घोषणा से जानकारी प्राप्त कर सकते हैं।</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>5. रमजान और ईद की तारीख कैसे तय होती है?</h3>
+                <p>रमजान और ईद की शुरुआत नए चाँद के दिखाई देने के आधार पर निर्धारित की जाती है।</p>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>निष्कर्ष</h2>
+            <p>चाँद की तारीख केवल एक दिन या संख्या नहीं है, बल्कि यह इस्लामी जीवन और धार्मिक परंपराओं का महत्वपूर्ण आधार है। हिजरी कैलेंडर मुसलमानों को उनके धार्मिक कर्तव्यों और महत्वपूर्ण अवसरों का सही समय बताता है। इसलिए सही और विश्वसनीय स्रोत से चाँद की तारीख की जानकारी प्राप्त करना हमेशा बेहतर होता है।</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Chand Ki Tarekh Portal. सर्वाधिकार सुरक्षित।</p>
+    </footer>
+
+</body>
+</html>
